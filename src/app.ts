@@ -15,3 +15,4 @@ caminhoneiro.acelerar();
 motox.parar();
 caminhoneiro.descarregar();
 motox.empinar();
+motox.parar();
