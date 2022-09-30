@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega</title>
+    <style>
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: green;
+    }
+    #but{
+    border-radius: 25%;
+    transition: .5s;
+    position: absolute;
+    border: none;
+    top: 28%;
+    left: 40%;
+    background-color: #009E4E;
+    color: aliceblue;
+
+ }
+ #but2{
+    border-radius: 25%;
+    transition: .5s;
+    position: absolute;
+    border: none;
+    top: 28%;
+    left: 50%;
+    background-color: #009E4E;
+    color: aliceblue;
+ }
+    #but2:hover{
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(3);
+    }
+    #but:hover{
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(3);
+    }
+    #mega{
+        border-radius: 80%;
+        width: 200px;
+        height: 200px;
+        background: #222;
+        margin-right: 50px;
+        transition: .7s;
+        position: absolute;
+        bottom: 68%;
+        left: 15.5%;
+        border: none;
+    }
+    #resultado{
+        color:whitesmoke;
+        height: 150px;
+        border-radius: 10px;
+        transition: .5s;
+        position: absolute;
+        border: none;
+        
+
+    }
+
+    #resultado :hover{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(5);
+    }
+    </style>
+    <script>
+        function sorteio(){
+        
+            var resultado = mega();
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+       
+    </script>
+</head>
+<body>
+    <button id="but" onclick="sorteio()">Sortea</button><br>
+    <a href="./index.html"><button id="but2">Reset</button></a>
+    <span id="resultado"></span><br>
+    <img id = "mega"src="./mega.jpg" alt="25px">
+
+    <script src="../src/dist/mega.js"></script>
+</body>
+</html>
